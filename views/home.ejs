@@ -1,0 +1,14 @@
+<%- include("./partials/header") -%>
+
+<h1>Home</h1>
+<p><%= homeContent %></p>
+<% console.log(datas); %>
+
+<% datas.forEach(function(data){ %>
+
+ <h1><%= data.title  %></h1>  
+ <p><%=  data.content.substring(0, 100) + ' ....'%> <a href="/titles/<%= data.title %>">Read More</a></p>
+
+ <% }); %>
+ 
+ <%- include("./partials/footer") -%>
