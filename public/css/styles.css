@@ -2,7 +2,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
-.navbar {
+.nav {
     padding-top: 15px;
     padding-bottom: 15px;
     border: 0;
@@ -10,6 +10,10 @@
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+}
+.navbar-header a{
+    text-decoration: none;
+    color: #777 ;
 }
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
