@@ -21,9 +21,12 @@ app.use(express.static(__dirname + '/public'));
 
 let datas = [];
 
-app.get("/", function (req, res) {
-  res.render("home", { homeContent: homeStartingContent, datas: datas });
-});
+// app.get("/", function (req, res) {
+//   res.render("home", { homeContent: homeStartingContent, datas: datas });
+// });
+app.get('/', function(req, res){
+  res.send('Hello there')
+})
 
 app.get("/about", function (req, res) {
   res.render("about", { aboutContents: aboutContent });
